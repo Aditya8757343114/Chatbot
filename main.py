@@ -46,13 +46,13 @@ SOURCE_TEXT = f"""
 ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ**
 """
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='hurr')], [InlineKeyboardButton(" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GRP}"), InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK")]])
-SOURCE = 'https://github.com/Noob-mukesh/Chatbot'
+SOURCE = 'https://github.com/Aditya8757343114/Chatbot'
 x=["❤️","🎉","✨","🪸","🎉","🎈","🎯"]
 g=choice(x)
 async def is_admins(chat_id: int):
     return [
         member.user.id
-        async for member in Mukesh.get_chat_members(
+        async for member in Aditya.get_chat_members(
             chat_id, filter=enums.ChatMembersFilter.ADMINISTRATORS
         )
     ]
@@ -462,4 +462,4 @@ async def vickprivatesticker(client: Client, message: Message):
                await message.reply_sticker(f"{hey}")
 
 print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ!")      
-Mukesh.run()
+Aditya.run()
